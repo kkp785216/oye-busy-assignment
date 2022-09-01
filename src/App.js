@@ -4,6 +4,7 @@ import './styles/Header.scss'
 import './styles/Home.scss'
 import Home from "./pages/Home";
 import Header from "./components/Header";
+import config from "./lib/config";
 
 const Layout = ({ children }) => {
   return (<>
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
 
 function App() {
   return (
-    <BrowserRouter basename='oye-busy-assignment'>
+    <BrowserRouter basename={config.basename}>
       <div className="App">
         <Routes>
           {/* <Route path="/" element={<App />}>
