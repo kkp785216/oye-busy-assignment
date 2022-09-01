@@ -3,6 +3,11 @@ header.main-header {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     height: 59px;
     line-height: 59px;
+    color: #415859;
+    padding: 0 33px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     .main-header-wrapper {
         display: flex;
@@ -10,23 +15,84 @@ header.main-header {
     }
 
     .main-header__left {
+        display: flex;
+
         .logo {
             width: 80px;
             position: relative;
             top: -2px;
+            margin-right: 37px;
+        }
+
+        .header__left__location {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 400;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
     .main-header__right {
         .navbar {
+            font-weight: 500;
+            letter-spacing: 0.8px;
+
             &>ul {
                 display: flex;
 
-                &> li {
-                    margin-right: 23px;
+                &>li {
+                    margin-right: 27px;
 
-                    &:last-child{
+                    &:last-child {
                         margin-right: 0;
+                    }
+
+                    .navbar__shopicon {
+                        font-size: 29px;
+                    }
+
+                    .navbar__download {
+                        padding: 9px 18px;
+                        border: 1px solid #415859;
+                        border-radius: 5px;
+
+                        img {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                .navbar__account{
+                    position: relative;
+
+                    &:hover .navbar__account__float{
+                        top: 48px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    .navbar__account__float{
+                        position: absolute;
+                        top: 58px;
+                        left: 0;
+                        right: 0;
+                        border-radius: 5px;
+                        background: #F7F7F7;
+                        box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+                        padding: 8px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all .3s ease;
+
+                        &> *{
+                            display: block;
+                            line-height: normal;
+                            margin: 13px 3px;
+                        }
                     }
                 }
             }
