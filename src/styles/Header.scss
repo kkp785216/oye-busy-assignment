@@ -1,0 +1,35 @@
+header.main-header {
+    background: #F7F7F7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: 59px;
+    line-height: 59px;
+
+    .main-header-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header__left {
+        .logo {
+            width: 80px;
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    .main-header__right {
+        .navbar {
+            &>ul {
+                display: flex;
+
+                &> li {
+                    margin-right: 23px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

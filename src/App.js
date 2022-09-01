@@ -1,5 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './styles/global.scss'
+import './styles/Header.scss'
+import './styles/Home.scss'
 import Home from "./pages/Home";
+import Header from "./components/Header";
+
+const Layout = ({ children }) => {
+  return (<>
+    { children }
+  </>);
+}
 
 function App() {
   return (
@@ -14,7 +24,12 @@ function App() {
           <Route index element={<LeagueStandings />} />
           </Route>
           </Route> */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={
+            <Layout>
+              <Header />
+              <Home />
+            </Layout>
+          } />
           <Route path="/about" element={<Home />} />
         </Routes>
       </div>
