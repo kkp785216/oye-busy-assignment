@@ -173,6 +173,13 @@ const Home = () => {
         </Heading1>
         <ServiceCard />
       </div>
+      <div className="mostused__service">
+        <Heading1>
+          <h2>Most Used Services</h2>
+          <span>Premium Home Services</span>
+        </Heading1>
+        <ServiceCard />
+      </div>
     </div>
   )
 }
