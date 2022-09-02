@@ -163,6 +163,7 @@
             width: 70%;
             margin: auto;
             margin-top: 83px;
+            padding-bottom: 33px;
 
             .home__tranding__products__col {
                 margin-bottom: 39px;
@@ -179,7 +180,7 @@
                 transition: all .3s ease;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     transform: scale(1.05);
                 }
 
@@ -197,7 +198,7 @@
                     right: 0;
                 }
 
-                img.sofa{
+                img.sofa {
                     height: 75px;
                     top: -34px;
                 }
@@ -207,6 +208,66 @@
                     text-align: center;
                     font-weight: 600;
                     font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .home__sameday {
+        margin-top: 15px;
+        font-family: 'Montserrat';
+
+        .home__sameday__products {
+            display: flex;
+            width: 77%;
+            margin: auto;
+            margin-top: 123px;
+            padding-bottom: 33px;
+
+            .home__sameday__products__col {
+                margin-bottom: 33px;
+                margin-right: 63px;
+                flex: auto;
+                flex-basis: 20%;
+                position: relative;
+                background: #FFFFFF;
+                box-shadow: 0px 5.07432px 25.3716px 2.96002px rgba(57, 57, 57, 0.15);
+                border-radius: 17.9289px;
+                padding: 12px 17px;
+                padding-top: 103px;
+                padding-bottom: 17px;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                img {
+                    height: 163px;
+                    display: block;
+                    margin: auto;
+                    position: absolute;
+                    top: -81.5px;
+                    left: 0;
+                    right: 0;
+                }
+
+                img.pubg {
+                    height: 226px;
+                    top: -131.5px;
+                    left: -16px;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 17px;
                 }
             }
         }

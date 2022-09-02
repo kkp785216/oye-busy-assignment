@@ -120,6 +120,34 @@ const Home = () => {
             <span>Air-Conditioner Services</span>
           </div>
         </div>
+        <div className="home__sameday">
+          <Heading1>
+            <h2>Same Day Service</h2>
+            <span>Premium Home Services</span>
+          </Heading1>
+          <div className="home__sameday__products">
+            <div className="home__sameday__products__col">
+              <img src={`${basename}/assets/img/sameday/Carpenter-PNG-Image.png`} alt="" />
+              <span>Carpentery Services</span>
+            </div>
+            <div className="home__sameday__products__col">
+              <img src={`${basename}/assets/img/sameday/kisspng-dick-rosher-plumbing-inc-plumber-drain-leak-plumber-5abfda3c8ab124 1.png`} alt="" />
+              <span>Plumbing Services</span>
+            </div>
+            <div className="home__sameday__products__col">
+              <img src={`${basename}/assets/img/sameday/kisspng-technician-plumber-electrician-home-repair-mainten-5ae1b847d030b7 1.png`} alt="" />
+              <span>Electrical Services</span>
+            </div>
+            <div className="home__sameday__products__col">
+              <img src={`${basename}/assets/img/sameday/pngegg.png`} alt="" />
+              <span>Painting Services</span>
+            </div>
+            <div className="home__sameday__products__col">
+              <img className='pubg' src={`${basename}/assets/img/sameday/kisspng-insecticide-pesticide-herbicide-sprayer-5d0e1b4badf171.png`} alt="" />
+              <span>Pest Control Serviecs</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
