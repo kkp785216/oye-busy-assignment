@@ -163,7 +163,6 @@
             width: 70%;
             margin: auto;
             margin-top: 83px;
-            padding-bottom: 33px;
 
             .home__tranding__products__col {
                 margin-bottom: 39px;
@@ -222,7 +221,6 @@
             width: 77%;
             margin: auto;
             margin-top: 123px;
-            padding-bottom: 33px;
 
             .home__sameday__products__col {
                 margin-bottom: 33px;
@@ -238,6 +236,11 @@
                 padding-bottom: 17px;
                 transition: all .3s ease;
                 cursor: pointer;
+
+                &.active {
+                    background: linear-gradient(48.55deg, #FFA500 -6.74%, #FFECCA 120.59%);
+                    color: #FFFFFF;
+                }
 
                 &:hover {
                     transform: scale(1.05);
@@ -270,6 +273,71 @@
                     font-size: 17px;
                 }
             }
+        }
+    }
+
+    .safeservice {
+        width: 50%;
+        margin: 73px auto;
+        display: flex;
+        position: relative;
+        background: #ECECEE;
+        border-radius: 12px;
+        padding: 23px 27px;
+        overflow: hidden;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        font-family: 'Montserrat';
+
+        .safeservice__row {
+            h2 {
+                color: #025B5D;
+                font-weight: 600;
+                font-size: 26px;
+                margin-bottom: 9px;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: -7px;
+
+                >div{
+                    margin-right: 53px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+
+                li {
+                    padding-left: 23px;
+                    position: relative;
+                    padding: 7px 12px;
+                    font-weight: 600;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #616161;
+                        border-radius: 100%;
+                    }
+                }
+            }
+
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
         }
     }
 }
