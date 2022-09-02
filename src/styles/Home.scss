@@ -397,4 +397,63 @@
             }
         }
     }
+    .mostused__service2{
+        margin-top: 77px;
+    }
+    .home__appliances{
+        padding-top: 21px;
+        .home__appliances__products {
+            display: flex;
+            width: 77%;
+            margin: auto;
+            margin-top: 73px;
+
+            .home__appliances__products__col {
+                margin-bottom: 39px;
+                margin-right: 39px;
+                flex: auto;
+                flex-basis: 20%;
+                position: relative;
+                background: #FFFFFF;
+                box-shadow: 0px 5.07432px 25.3716px 2.96002px rgba(57, 57, 57, 0.15);
+                border-radius: 17.9289px;
+                padding: 12px 17px;
+                padding-top: 69px;
+                padding-bottom: 7px;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                img {
+                    height: 91px;
+                    display: block;
+                    margin: auto;
+                    position: absolute;
+                    top: -30.5px;
+                    left: 0;
+                    right: 0;
+                }
+
+                img.sofa {
+                    height: 75px;
+                    top: -34px;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 13px;
+                    font-family: 'Montserrat';
+                }
+            }
+        }
+    }
 }

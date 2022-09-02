@@ -206,6 +206,45 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="mostused__service2">
+        <Heading1>
+          <h2>Trending Services</h2>
+          <span>Premium Home Services</span>
+        </Heading1>
+        <ServiceCard />
+      </div>
+      <div className="home__appliances">
+      <Heading1>
+          <h2>Home Appliances Services</h2>
+          <span>Premium Home Services</span>
+        </Heading1>
+        <div className="home__appliances__products">
+          <div className="home__appliances__products__col">
+            <img src={`${basename}/assets/img/appliances/Rectangle 1918.png`} alt="" />
+            <span>Washing Machine Repair</span>
+          </div>
+          <div className="home__appliances__products__col">
+            <img src={`${basename}/assets/img/appliances/Rectangle 1917.png`} alt="" />
+            <span>Refrigerator Repair / Service</span>
+          </div>
+          <div className="home__appliances__products__col">
+            <img src={`${basename}/assets/img/appliances/Rectangle 1916.png`} alt="" />
+            <span>Microwave Repair</span>
+          </div>
+          <div className="home__appliances__products__col">
+            <img src={`${basename}/assets/img/appliances/Rectangle 1919.png`} alt="" />
+            <span>RO Service</span>
+          </div>
+          <div className="home__appliances__products__col">
+            <img src={`${basename}/assets/img/appliances/Rectangle 1922.png`} alt="" />
+            <span>LED TV Repair</span>
+          </div>
+          <div className="home__appliances__products__col">
+            <img src={`${basename}/assets/img/appliances/Group 1535.png`} alt="" />
+            <span>AC Services</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
