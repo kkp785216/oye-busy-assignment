@@ -2,6 +2,7 @@ import React from 'react'
 import config from '../lib/config'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Heading1 from '../components/Heading1';
 
 const Home = () => {
   const { basename } = config;
@@ -89,6 +90,34 @@ const Home = () => {
               <SwiperSlide><img src={`${basename}/assets/img/looking/4.png`} width="100%" alt="" /></SwiperSlide>
               <SwiperSlide><img src={`${basename}/assets/img/looking/5.png`} width="100%" alt="" /></SwiperSlide>
             </Swiper>
+          </div>
+        </div>
+      </div>
+      <div className="home__tranding">
+        <Heading1>
+          <h2>Trending Services</h2>
+          <span>Premium Home Services</span>
+        </Heading1>
+        <div className="home__tranding__products">
+          <div className="home__tranding__products__col">
+            <img src={`${basename}/assets/img/trending/Rectangle 19.png`} alt="" />
+            <span>Air-Conditioner Services</span>
+          </div>
+          <div className="home__tranding__products__col">
+            <img src={`${basename}/assets/img/trending/Rectangle 20.png`} alt="" />
+            <span>AC Installation</span>
+          </div>
+          <div className="home__tranding__products__col">
+            <img className='sofa' src={`${basename}/assets/img/trending/image 12.png`} alt="" />
+            <span>Sofa Cleaning Service</span>
+          </div>
+          <div className="home__tranding__products__col">
+            <img src={`${basename}/assets/img/trending/image 13.png`} alt="" />
+            <span>Home Deep Cleaning Service</span>
+          </div>
+          <div className="home__tranding__products__col">
+            <img src={`${basename}/assets/img/trending/Rectangle 19.png`} alt="" />
+            <span>Air-Conditioner Services</span>
           </div>
         </div>
       </div>
