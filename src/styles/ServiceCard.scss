@@ -1,0 +1,36 @@
+.servicecard{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px auto;
+    margin-top: 16px;
+    padding-bottom: 43px;
+
+    .servicecard__col{
+        width: 25%;
+        flex: 0 0 auto;
+        padding: 16px;
+
+        .servicecard__img{
+            width: 100%;
+            padding-bottom: 56.75%;
+            background: #531C1C;
+            border-radius: 7px;
+        }
+
+        strong{
+            margin-top: 11px;
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            line-height: 23px;
+        }
+        span{
+            font-size: 11px;
+            display: block;
+            color: #757575;
+            text-align: center;
+        }
+    }
+}

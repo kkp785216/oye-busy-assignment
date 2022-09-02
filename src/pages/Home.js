@@ -3,6 +3,7 @@ import config from '../lib/config'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Heading1 from '../components/Heading1';
+import ServiceCard from '../components/ServiceCard';
 
 const Home = () => {
   const { basename } = config;
@@ -164,6 +165,13 @@ const Home = () => {
           </ul>
         </div>
         <img src={`${basename}/assets/img/delivery-man-red-uniform-medical-mask-gloves-pointing-fingers-away-looking-confident 1.png`} alt="" />
+      </div>
+      <div className="professional__service">
+        <Heading1>
+          <h2>Professional Cleaning Services</h2>
+          <span>Premium Home Services</span>
+        </Heading1>
+        <ServiceCard />
       </div>
     </div>
   )
