@@ -1,5 +1,4 @@
 import React from 'react'
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import config from '../lib/config'
 
 const Home = () => {
