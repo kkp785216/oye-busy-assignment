@@ -180,6 +180,32 @@ const Home = () => {
         </Heading1>
         <ServiceCard />
       </div>
+      <div className="assuredmind">
+        <h2>Assured Peace of Mind</h2>
+        <div className="assuredmind__row">
+          <div className="assuredmind__col">
+            <img src={`${basename}/assets/img/gradient-graphic-2 2.svg`} alt="" />
+            <div>
+              <strong>High Quality Work</strong>
+              <span>Only authorized service experts and genuine spare parts and equipments</span>
+            </div>
+          </div>
+          <div className="assuredmind__col">
+            <img src={`${basename}/assets/img/gradient-graphic-2 1.svg`} alt="" />
+            <div>
+              <strong>Hassle Free</strong>
+              <span>Sit back and relax. We do all the work</span>
+            </div>
+          </div>
+          <div className="assuredmind__col">
+            <img src={`${basename}/assets/img/gradient-graphic-3 1.svg`} alt="" />
+            <div>
+              <strong>Totally Cashless</strong>
+              <span>Pay online for Safe &amp; Secure payment. Many benefits and offers available with online payment</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
