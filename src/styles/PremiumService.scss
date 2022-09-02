@@ -1,0 +1,108 @@
+.premium__service {
+    display: flex;
+    font-family: "Montserrat";
+
+    .premium__service__heading {
+        max-width: 153px;
+        margin-top: 44px;
+
+        h2 {
+            color: #025B5D;
+            font-weight: 600;
+            font-size: 26px;
+            margin-bottom: 4px;
+            margin-bottom: 23px;
+        }
+
+        span {
+            display: block;
+            font-weight: 500;
+            font-size: 13px;
+        }
+    }
+
+    .premium__service__swiper {
+        margin: auto;
+        width: 75%;
+        position: relative;
+
+        .premium__service__products__col {
+            position: relative;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 15px 3.5px rgba(0, 0, 0, 0.15);
+            border-radius: 17.9289px;
+            padding: 12px 17px;
+            padding-top: 63px;
+            padding-bottom: 7px;
+            transition: all .3s ease;
+            cursor: pointer;
+            margin-top: 53px;
+            margin-bottom: 17px;
+            margin-left: 8px;
+            margin-right: 8px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                height: 91px;
+                display: block;
+                margin: auto;
+                position: absolute;
+                top: -38.5px;
+                left: 0;
+                right: 0;
+            }
+
+            img.sofa {
+                height: 75px;
+                top: -34px;
+            }
+
+            strong {
+                display: block;
+                text-align: center;
+                font-weight: 600;
+                font-size: 13px;
+                font-family: 'Montserrat';
+                margin-bottom: 2px;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                font-weight: 500;
+                font-size: 11px;
+                font-family: 'Montserrat';
+                color: #757575;
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #025B5D;
+            margin-top: 0;
+            margin-left: 0;
+
+            &::after {
+                content: "";
+                width: 27px;
+                height: 27px;
+                background-size: contain;
+            }
+        }
+
+        .swiper-button-prev {
+            &:after {
+                background-image: url("./background/prev.svg");
+            }
+        }
+
+        .swiper-button-next {
+            &:after {
+                background-image: url("./background/next.svg");
+            }
+        }
+    }
+}

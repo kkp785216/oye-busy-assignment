@@ -3,6 +3,7 @@ import './styles/global.scss'
 import './styles/Header.scss'
 import './styles/Heading1.scss'
 import './styles/ServiceCard.scss'
+import './styles/PremiumService.scss'
 import './styles/Home.scss'
 import Home from "./pages/Home";
 import Header from "./components/Header";

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Heading1 from '../components/Heading1';
 import ServiceCard from '../components/ServiceCard';
+import PremiumService from '../components/PremiumService';
 
 const Home = () => {
   const { basename } = config;
@@ -214,7 +215,7 @@ const Home = () => {
         <ServiceCard />
       </div>
       <div className="home__appliances">
-      <Heading1>
+        <Heading1>
           <h2>Home Appliances Services</h2>
           <span>Premium Home Services</span>
         </Heading1>
@@ -244,6 +245,12 @@ const Home = () => {
             <span>AC Services</span>
           </div>
         </div>
+      </div>
+      <div className="book__service__ad">
+        <img src={`${basename}/assets/img/Group 1653.jpg`} width="100%" alt="" />
+      </div>
+      <div className="electrician__services">
+        <PremiumService />
       </div>
     </div>
   )
