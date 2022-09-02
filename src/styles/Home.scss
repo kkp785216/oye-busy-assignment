@@ -18,25 +18,70 @@
 
             .home__search__wrapper {
                 position: absolute;
-                top: 0;
+                top: 20%;
                 left: 0;
                 right: 0;
-                bottom: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 z-index: 1;
-                font-family: mo;
 
-                h3 {
-                    font-family: 'Montserrat', sans-serif;
+                >h3 {
+                    font-family: "Montserrat", sans-serif;
                     font-weight: 700;
-                    font-size: 48px;
-                    line-height: 59px;
+                    font-size: 33px;
                     text-align: center;
                     color: #FFFFFF;
+                    margin-bottom: 31px;
                 }
+
+                .home__search__form__wrapper {
+                    width: 75%;
+
+                    >span {
+                        font-weight: 900;
+                        font-size: 12px;
+                        margin-top: 6px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                        display: block;
+
+                        span {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                form {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        left: 11px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 17px;
+                    }
+
+                    input {
+                        padding: 14px 6px;
+                        padding-left: 45px;
+                        border-radius: 3px;
+                        outline: none;
+                        border: none;
+                        max-width: 632px;
+                        width: 100%;
+                        font-size: 15px;
+
+                        &::placeholder {
+                            font-weight: 400;
+                            color: #9A9A9A;
+                        }
+                    }
+                }
+
             }
         }
 
