@@ -486,6 +486,10 @@ const Home = () => {
         </div>
       </div>
       <Refer/>
+      <div className="hssle__service">
+        <img src={`${basename}/assets/img/stamp-02 1.png`} alt="" />
+        <span>Hassle free services with OyeBusy</span>
+      </div>
     </div>
   )
 }

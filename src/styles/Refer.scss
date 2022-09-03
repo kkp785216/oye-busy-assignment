@@ -57,6 +57,14 @@
             position: relative;
             left: -47px;
             margin-top: 21px;
+
+            img{
+                cursor: pointer;
+            }
+
+            img:first-child{
+                margin-right: 11px;
+            }
         }
     }
 

@@ -574,4 +574,23 @@
             }
         }
     }
+    .hssle__service{
+        width: 60%;
+        margin: auto;
+        margin-top: 33px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+            width: 160px;
+        }
+        span{
+            font-family: "Montserrat";
+            font-size: 27px;
+            font-weight: 600;
+            max-width: 350px;
+            display: block;
+            text-align: center;
+        }
+    }
 }
