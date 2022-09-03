@@ -24,6 +24,12 @@ const PremiumService = ({ heading, children }) => {
                     slidesPerView={6}
                     modules={[Navigation]}
                     navigation
+                    breakpoints={{
+                        660:{slidesPerView: 3},
+                        1010:{slidesPerView: 4},
+                        1110:{slidesPerView: 5},
+                        1260: {slidesPerView: 6}
+                    }}
                 >
                     {children}
                 </Swiper>

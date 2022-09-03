@@ -98,6 +98,7 @@
 
         .swiper-button-prev {
             left: -53px;
+
             &:after {
                 background-image: url("./background/prev.svg");
             }
@@ -105,9 +106,16 @@
 
         .swiper-button-next {
             right: -53px;
+
             &:after {
                 background-image: url("./background/next.svg");
             }
+        }
+    }
+
+    @media (max-width: 1260px) {
+        .premium__service__heading {
+            margin-left: 47px;
         }
     }
 }

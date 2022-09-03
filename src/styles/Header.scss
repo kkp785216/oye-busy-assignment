@@ -33,6 +33,10 @@ header.main-header {
             &:hover {
                 text-decoration: underline;
             }
+
+            span {
+                font-size: 14.5px;
+            }
         }
     }
 
@@ -46,6 +50,7 @@ header.main-header {
 
                 &>li {
                     margin-right: 27px;
+                    font-size: 14.5px;
 
                     &:last-child {
                         margin-right: 0;
@@ -62,20 +67,28 @@ header.main-header {
 
                         img {
                             margin-right: 20px;
+                            width: 19px;
                         }
                     }
                 }
 
-                .navbar__account{
+                .navbar__account {
                     position: relative;
 
-                    &:hover .navbar__account__float{
+                    &:hover .navbar__account__float {
                         top: 48px;
                         opacity: 1;
                         visibility: visible;
                     }
 
-                    .navbar__account__float{
+                    .navbar__profile__img {
+                        width: 33px;
+                        height: 33px;
+                        border-radius: 100%;
+                        display: none;
+                    }
+
+                    .navbar__account__float {
                         position: absolute;
                         top: 58px;
                         left: 0;
@@ -88,10 +101,63 @@ header.main-header {
                         visibility: hidden;
                         transition: all .3s ease;
 
-                        &> *{
+                        &>* {
                             display: block;
                             line-height: normal;
                             margin: 13px 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1190px) {
+        .main-header__right {
+            .navbar {
+                ul {
+                    .navbar__shopicon_li {
+                        margin-right: 0;
+                    }
+
+                    .navbar__download__li {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .main-header__right {
+            .navbar {
+                ul {
+                    li:not(li.navbar__shopicon_li, .navbar__account) {
+                        display: none;
+                    }
+
+                    .navbar__shopicon_li {
+                        margin-right: 27px;
+                    }
+
+                    .navbar__account {
+                        order: 1;
+                        margin-right: 0;
+                    }
+
+                    .navbar__my__account {
+                        display: none;
+                    }
+
+                    .navbar__account {
+                        .navbar__profile__img {
+                            display: unset;
+                        }
+
+                        .navbar__account__float {
+                            left: unset;
+                            right: -21px;
+                            width: 110px;
                         }
                     }
                 }

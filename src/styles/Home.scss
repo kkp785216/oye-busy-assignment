@@ -6,6 +6,11 @@
             width: 50%;
             position: relative;
 
+            >img {
+                height: 100%;
+                object-fit: cover;
+            }
+
             &::after {
                 content: "";
                 position: absolute;
@@ -160,9 +165,10 @@
 
         .home__tranding__products {
             display: flex;
-            width: 70%;
+            max-width: 928px;
             margin: auto;
             margin-top: 83px;
+            flex: auto;
 
             .home__tranding__products__col {
                 margin-bottom: 39px;
@@ -210,6 +216,14 @@
                 }
             }
         }
+
+        @media (max-width: 1024px) {
+            .home__tranding__products{
+                .home__tranding__products__col:last-child{
+                    display: none;
+                }
+            }
+        }
     }
 
     .home__sameday {
@@ -218,7 +232,7 @@
 
         .home__sameday__products {
             display: flex;
-            width: 77%;
+            max-width: 1039px;
             margin: auto;
             margin-top: 123px;
 
@@ -271,6 +285,54 @@
                     text-align: center;
                     font-weight: 600;
                     font-size: 17px;
+                }
+            }
+        }
+
+        @media (max-width: 1140px) {
+            .home__sameday__products{
+                max-width: 928px;
+                .home__sameday__products__col{
+                    margin-right: 33px;
+                    padding-top: 87px;
+
+                    img{
+                        height: 148px;
+                    }
+
+                    img.pubg{
+                        height: 199px;
+                        top: -126.5px;
+                        left: -9px;
+                    }
+
+                    span{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .home__sameday__products{
+                margin-left: 33px;
+                margin-right: 33px;
+                .home__sameday__products__col{
+                    padding-top: 72px;
+
+                    img{
+                        height: 129px;
+                    }
+
+                    img.pubg{
+                        height: 178px;
+                        top: -121.5px;
+                        left: -3px;
+                    }
+
+                    span{
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -359,7 +421,7 @@
 
         .assuredmind__row {
             display: flex;
-            width: 70%;
+            max-width: 928px;
             margin: auto;
             margin-top: 37px;
         }
@@ -407,7 +469,7 @@
 
         .home__appliances__products {
             display: flex;
-            width: 77%;
+            max-width: 1039px;
             margin: auto;
             margin-top: 73px;
 
@@ -520,7 +582,7 @@
     }
 
     .customers__says {
-        width: 70%;
+        max-width: 928px;
         margin-left: auto;
         margin-right: auto;
         font-family: 'Montserrat';
@@ -539,7 +601,7 @@
             flex-wrap: wrap;
             margin: -16px;
 
-            .customers__says__col__wrapper{
+            .customers__says__col__wrapper {
                 width: 25%;
                 flex: 0 0 auto;
                 padding: 16px;
@@ -574,17 +636,20 @@
             }
         }
     }
-    .hssle__service{
+
+    .hssle__service {
         width: 60%;
         margin: auto;
         margin-top: 33px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        img{
+
+        img {
             width: 160px;
         }
-        span{
+
+        span {
             font-family: "Montserrat";
             font-size: 27px;
             font-weight: 600;
