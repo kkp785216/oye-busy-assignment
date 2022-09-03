@@ -5,6 +5,8 @@ import 'swiper/css';
 import Heading1 from '../components/Heading1';
 import ServiceCard from '../components/ServiceCard';
 import PremiumService from '../components/PremiumService';
+import { Link } from 'react-router-dom';
+// import Refer from '../components/Refer';
 
 const Home = () => {
   const { basename } = config;
@@ -462,13 +464,28 @@ const Home = () => {
         <div className="why__choose__row">
           <div className="why__choose__col">
             <h2>Why People Choose Us</h2>
-              <li>Affordable Rates</li>
-              <li>On Time Service</li>
-              <li>Verified Professionals</li>
-              <li>Excellent Service</li>
+            <li>Affordable Rates</li>
+            <li>On Time Service</li>
+            <li>Verified Professionals</li>
+            <li>Excellent Service</li>
           </div>
         </div>
       </div>
+      <div className="customers__says">
+        <h2>What our customer say</h2>
+        <div className="customers__says__row">
+          {[...new Array(4)].map((e, i) => (
+            <div className='customers__says__col__wrapper'>
+              <div className="customers__says__col" key={i}>
+                <img src={`${basename}/assets/img/Frame.svg`} alt="" />
+                <p>Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus eleifend augue volutpat hendrerit. </p>
+                <Link className='hover' to="/client/ritu-kumar">Ritu Kumar</Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* <Refer/> */}
     </div>
   )
 }

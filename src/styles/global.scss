@@ -28,3 +28,10 @@ a {
 li {
     list-style: none;
 }
+
+.hover{
+    transition: color .3s ease;
+    &:hover{
+        color: #ffa500 !important;
+    }
+}

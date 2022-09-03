@@ -21,15 +21,15 @@ const Header = () => {
                 <div className="main-header__right">
                     <nav className="navbar">
                         <ul>
-                            <li><Link to="/blog">Blog</Link></li>
-                            <li><Link to="/career">Career</Link></li>
+                            <li><Link className='hover' to="/blog">Blog</Link></li>
+                            <li><Link className='hover' to="/career">Career</Link></li>
                             <li className='navbar__account'>
                                 <span>My Account</span><KeyboardArrowDownOutlinedIcon fontSize='small' />
                                 <div className="navbar__account__float">
-                                    <Link to="/profile">Profile</Link>
-                                    <Link to="/profile">Orders</Link>
-                                    <Link to="/profile">Cart</Link>
-                                    <Link to="/profile">Logout</Link>
+                                    <Link className='hover' to="/profile">Profile</Link>
+                                    <Link className='hover' to="/profile">Orders</Link>
+                                    <Link className='hover' to="/profile">Cart</Link>
+                                    <Link className='hover' to="/profile">Logout</Link>
                                 </div>
                             </li>
                             <li><Link to="/career"><ShoppingCartIcon className='navbar__shopicon' /></Link></li>
