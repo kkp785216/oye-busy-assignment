@@ -5,6 +5,7 @@
     .premium__service__heading {
         max-width: 153px;
         margin-top: 44px;
+        margin-left: 70px;
 
         h2 {
             color: #025B5D;
@@ -22,8 +23,9 @@
     }
 
     .premium__service__swiper {
-        margin: auto;
-        width: 75%;
+        margin: 0px 80px;
+        width: 60%;
+        flex: auto;
         position: relative;
 
         .premium__service__products__col {
@@ -94,12 +96,14 @@
         }
 
         .swiper-button-prev {
+            left: -53px;
             &:after {
                 background-image: url("./background/prev.svg");
             }
         }
 
         .swiper-button-next {
+            right: -53px;
             &:after {
                 background-image: url("./background/next.svg");
             }
