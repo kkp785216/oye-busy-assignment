@@ -330,59 +330,66 @@ const Home = () => {
           </SwiperSlide>
         </PremiumService>
       </div>
-      {/* <div className="plumber__services">
+      <div className="plumber__services">
         <PremiumService heading={<>Plumber<br />Services</>}>
           <SwiperSlide>
             <div className="premium__service__products__col">
               <img src={`${basename}/assets/img/plumber/Basin_&_sink.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <strong>Wash Basin &amp; Sink</strong>
+              <span>Repairing &amp; Installation</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="premium__service__products__col">
-              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <img src={`${basename}/assets/img/plumber/Bath_fittings.png`} alt="" />
+              <strong>Bath Fittings</strong>
+              <span>Shower, Faucets &amp; Holder Installation &amp; Repair</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="premium__service__products__col">
-              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <img src={`${basename}/assets/img/plumber/Blockage.png`} alt="" />
+              <strong>Blockage</strong>
+              <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="premium__service__products__col">
-              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <img src={`${basename}/assets/img/plumber/Drill_&_hang.png`} alt="" />
+              <strong>Drill &amp; Hole</strong>
+              <span>Painting, Clock &amp; Photoframe</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="premium__service__products__col">
-              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <img src={`${basename}/assets/img/plumber/Minor_installations.png`} alt="" />
+              <strong>Minor Installations</strong>
+              <span>Holder, Hanger, Rod Installation</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="premium__service__products__col">
-              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <img src={`${basename}/assets/img/plumber/Tap.png`} alt="" />
+              <strong>Mixer, Tap &amp; Nozzle</strong>
+              <span>Bed, Table, Rack &amp; Cabinet</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="premium__service__products__col">
-              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
-              <strong></strong>
-              <span></span>
+              <img src={`${basename}/assets/img/plumber/Toilet.png`} alt="" />
+              <strong>Toilet</strong>
+              <span>Table, Chair cap &amp; wheel, Wooden Floor</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/Water_tank.png`} alt="" />
+              <strong>Water Tank</strong>
+              <span>Drawer, Cupboard &amp; Door lock Repair &amp; Installation</span>
             </div>
           </SwiperSlide>
         </PremiumService>
-      </div> */}
+      </div>
     </div>
   )
 }
