@@ -6,7 +6,7 @@ import Heading1 from '../components/Heading1';
 import ServiceCard from '../components/ServiceCard';
 import PremiumService from '../components/PremiumService';
 import { Link } from 'react-router-dom';
-// import Refer from '../components/Refer';
+import Refer from '../components/Refer';
 
 const Home = () => {
   const { basename } = config;
@@ -485,7 +485,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      {/* <Refer/> */}
+      <Refer/>
     </div>
   )
 }
