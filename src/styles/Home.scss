@@ -370,8 +370,8 @@
             flex-basis: 33.333333%;
             align-items: flex-start;
             margin-right: 33px;
-             
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
             }
 
@@ -397,11 +397,14 @@
             }
         }
     }
-    .mostused__service2{
+
+    .mostused__service2 {
         margin-top: 77px;
     }
-    .home__appliances{
+
+    .home__appliances {
         padding-top: 21px;
+
         .home__appliances__products {
             display: flex;
             width: 77%;
@@ -456,7 +459,62 @@
             }
         }
     }
-    .book__service__ad{
+
+    .book__service__ad {
         padding-top: 23px;
+    }
+
+    .why__choose {
+        margin-top: 83px;
+        font-family: 'Montserrat';
+        display: flex;
+        background: #E5E4E9;
+        position: relative;
+        margin-left: 53px;
+        margin-right: 53px;
+
+        img {
+            width: 33.333333%;
+        }
+
+        .why__choose__row {
+            max-width: 350px;
+            flex: auto;
+            padding: 33px 37px;
+            background-color: #FFFFFF;
+            height: fit-content;
+            margin: 17px auto;
+
+            .why__choose__col {
+                h2 {
+                    color: #017F82;
+                    font-weight: 600;
+                    font-size: 26px;
+                    margin-bottom: 4px;
+                    margin-bottom: 23px;
+                }
+
+                li {
+                    line-height: 29px;
+                    font-weight: 700;
+                    max-width: 177px;
+                    padding-left: 21px;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        width: 6px;
+                        height: 6px;
+                        background: #000000;
+                        border-radius: 100%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
     }
 }
