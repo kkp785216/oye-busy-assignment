@@ -7,9 +7,7 @@
     padding-bottom: 43px;
 
     .servicecard__col{
-        width: 25%;
         flex: 0 0 auto;
-        padding: 16px;
 
         .servicecard__img{
             width: 100%;
@@ -31,6 +29,13 @@
             display: block;
             color: #757575;
             text-align: center;
+        }
+    }
+
+    @media (max-width: 998px) {
+        &{
+            margin-left: 33px;
+            margin-right: 33px;
         }
     }
 }

@@ -5,10 +5,18 @@
         .home__search__container {
             width: 50%;
             position: relative;
+            overflow: hidden;
+
+            &:hover{
+                >img{
+                    transform: scale(1.04);
+                }
+            }
 
             >img {
                 height: 100%;
                 object-fit: cover;
+                transition: .3s ease;
             }
 
             &::after {
@@ -219,9 +227,19 @@
 
         @media (max-width: 1024px) {
             .home__tranding__products{
+                .home__tranding__products__col:nth-child(4){
+                    margin-right: 0;
+                }
                 .home__tranding__products__col:last-child{
                     display: none;
                 }
+            }
+        }
+
+        @media (max-width: 971px) {
+            .home__tranding__products{
+                margin-left: 33px;
+                margin-right: 33px;
             }
         }
     }
