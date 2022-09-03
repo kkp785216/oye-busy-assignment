@@ -250,8 +250,139 @@ const Home = () => {
         <img src={`${basename}/assets/img/Group 1653.jpg`} width="100%" alt="" />
       </div>
       <div className="electrician__services">
-        <PremiumService />
+        <PremiumService heading={<>Electrician<br />Services</>}>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/mcb___fuse.png`} alt="" />
+              <strong>MCB &amp; Fuse</strong>
+              <span>Repairing &amp; Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/switches___sockets.png`} alt="" />
+              <strong>Switch &amp; Socket</strong>
+              <span>Shower, Faucets &amp; Holder Installation &amp; Repair</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/wiring.png`} alt="" />
+              <strong>Wiring</strong>
+              <span>Toilet pot, Sink, Bathroom, Balcony pipe</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/appliance.png`} alt="" />
+              <strong>Appliances</strong>
+              <span>Painting, Clock &amp; Photoframe</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/chandelier.png`} alt="" />
+              <strong>Chandelier</strong>
+              <span>Holder, Hanger, Rod Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/door_bell.png`} alt="" />
+              <strong>Door Bell</strong>
+              <span>Bed, Table, Rack &amp; Cabinet</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/Drill_&_hang.png`} alt="" />
+              <strong>Drill &amp; Hole</strong>
+              <span>Drill &amp; Hole Table, Chair cap &amp; wheel, Wooden Floor</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/fan.png`} alt="" />
+              <strong>Fan</strong>
+              <span>Drawer, Cupboard &amp; Door lock Repair &amp; Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/inverter___stabilizer.png`} alt="" />
+              <strong>Inverter &amp; Stablizer</strong>
+              <span>Drawer, Cupboard &amp; Door lock Repair &amp; Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/lights.png`} alt="" />
+              <strong>Light</strong>
+              <span>Drawer, Cupboard &amp; Door lock Repair &amp; Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/electrician/room_heater.png`} alt="" />
+              <strong>Heater</strong>
+              <span>Drawer, Cupboard &amp; Door lock Repair &amp; Installation</span>
+            </div>
+          </SwiperSlide>
+        </PremiumService>
       </div>
+      {/* <div className="plumber__services">
+        <PremiumService heading={<>Plumber<br />Services</>}>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/Basin_&_sink.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/plumber/.png`} alt="" />
+              <strong></strong>
+              <span></span>
+            </div>
+          </SwiperSlide>
+        </PremiumService>
+      </div> */}
     </div>
   )
 }
