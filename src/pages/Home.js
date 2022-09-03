@@ -390,6 +390,73 @@ const Home = () => {
           </SwiperSlide>
         </PremiumService>
       </div>
+      <div className="carpenter__services">
+        <PremiumService heading={<>Carpenter<br />Services</>}>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Bed.png`} alt="" />
+              <strong>Bed</strong>
+              <span>Repairing Support, Legs</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Curtain & Blinds.png`} alt="" />
+              <strong>Curtain & Blinds</strong>
+              <span>Motorized, Non-Motorized Blinds & Curtain Rod</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/door 1.png`} alt="" />
+              <strong>Door</strong>
+              <span>Repairing, Accessories Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Drawer_&_cupboard.png`} alt="" />
+              <strong>Drawer & Cupboard</strong>
+              <span>Channel, Hinge Repair</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Fitting_&_minor_installations.png`} alt="" />
+              <strong>Fittings & Installations</strong>
+              <span>Holder, Hanger, Rod Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Furniture_assembly.png`} alt="" />
+              <strong>Furniture Assembly</strong>
+              <span>Bed, Table, Rack & Cabinet</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Furniture_repairing.png`} width="106px" height="91px" alt="" />
+              <strong>Furniture Repair</strong>
+              <span>Table, Chair cap & wheel, Wooden Floor</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Lock.png`} alt="" />
+              <strong>Lock</strong>
+              <span>Drawer, Cupboard & Door lock Repair & Installation</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="premium__service__products__col">
+              <img src={`${basename}/assets/img/carpenter/Drill_&_hang.png`} alt="" />
+              <strong>Drill & Hole</strong>
+              <span>Painting, Clock & Photoframe</span>
+            </div>
+          </SwiperSlide>
+        </PremiumService>
+      </div>
     </div>
   )
 }
