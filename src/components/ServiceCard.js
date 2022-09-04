@@ -9,8 +9,8 @@ const ServiceCard = () => {
                 spaceBetween={33}
                 slidesPerView={4}
                 breakpoints={{
-                    // 660: { slidesPerView: 3 },
-                    // 1010: { slidesPerView: 4 },
+                    660: { slidesPerView: 3.5 },
+                    850: { slidesPerView: 4 },
                     // 1110: { slidesPerView: 5 },
                     // 1260: { slidesPerView: 6 }
                 }}

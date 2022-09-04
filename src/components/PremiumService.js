@@ -25,7 +25,8 @@ const PremiumService = ({ heading, children }) => {
                     modules={[Navigation]}
                     navigation
                     breakpoints={{
-                        660:{slidesPerView: 3},
+                        660:{slidesPerView: 4},
+                        850:{slidesPerView: 3},
                         1010:{slidesPerView: 4},
                         1110:{slidesPerView: 5},
                         1260: {slidesPerView: 6}

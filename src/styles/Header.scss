@@ -164,4 +164,33 @@ header.main-header {
             }
         }
     }
+
+    @media(max-width: 767px) {
+        background-color: #FFFFFF;
+        box-shadow: none;
+
+        .main-header-wrapper {
+            justify-content: center;
+
+            .main-header__left {
+                flex: auto;
+                .logo {
+                    display: none;
+                }
+                .header__left__location{
+                    font-weight: 700;
+                    flex: auto;
+
+                    svg:last-child{
+                        margin-left: auto;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .main-header__right {
+                display: none;
+            }
+        }
+    }
 }

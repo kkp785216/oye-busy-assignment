@@ -7,6 +7,7 @@ import ServiceCard from '../components/ServiceCard';
 import PremiumService from '../components/PremiumService';
 import { Link } from 'react-router-dom';
 import Refer from '../components/Refer';
+import CustomerSay from '../components/CustomerSay';
 
 const Home = () => {
   const { basename } = config;
@@ -27,7 +28,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home__looking__container">
-          <div>
+          <div className='home__looking__products__container'>
             <div className="home__looking__heading">
               <h3>What are you looking for?</h3>
               <span>FLAT $400 OFF <img src={`${basename}/assets/img/Polygon 2.svg`} alt="" /></span>
@@ -84,6 +85,7 @@ const Home = () => {
             </div>
           </div>
           <div className="home__looking__swiper">
+            <h3>Top Offers</h3>
             <Swiper
               spaceBetween={11}
               slidesPerView={2.4}
@@ -252,7 +254,7 @@ const Home = () => {
         <img src={`${basename}/assets/img/Group 1653.jpg`} width="100%" alt="" />
       </div>
       <div className="electrician__services">
-        <PremiumService heading={<>Electrician<br />Services</>}>
+        <PremiumService heading={'Electrician Services'}>
           <SwiperSlide>
             <div className="premium__service__products__col">
               <img src={`${basename}/assets/img/electrician/mcb___fuse.png`} alt="" />
@@ -333,7 +335,7 @@ const Home = () => {
         </PremiumService>
       </div>
       <div className="plumber__services">
-        <PremiumService heading={<>Plumber<br />Services</>}>
+        <PremiumService heading={'Plumber Services'}>
           <SwiperSlide>
             <div className="premium__service__products__col">
               <img src={`${basename}/assets/img/plumber/Basin_&_sink.png`} alt="" />
@@ -393,7 +395,7 @@ const Home = () => {
         </PremiumService>
       </div>
       <div className="carpenter__services">
-        <PremiumService heading={<>Carpenter<br />Services</>}>
+        <PremiumService heading={'Carpenter Services'}>
           <SwiperSlide>
             <div className="premium__service__products__col">
               <img src={`${basename}/assets/img/carpenter/Bed.png`} alt="" />
@@ -471,21 +473,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="customers__says">
-        <h2>What our customer say</h2>
-        <div className="customers__says__row">
-          {[...new Array(4)].map((e, i) => (
-            <div className='customers__says__col__wrapper'>
-              <div className="customers__says__col" key={i}>
-                <img src={`${basename}/assets/img/Frame.svg`} alt="" />
-                <p>Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus eleifend augue volutpat hendrerit. </p>
-                <Link className='hover' to="/client/ritu-kumar">Ritu Kumar</Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <Refer/>
+      <CustomerSay heading={'What our customer say'} />
+      <Refer />
       <div className="hssle__service">
         <img src={`${basename}/assets/img/stamp-02 1.png`} alt="" />
         <span>Hassle free services with OyeBusy</span>

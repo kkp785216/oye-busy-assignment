@@ -7,8 +7,8 @@
             position: relative;
             overflow: hidden;
 
-            &:hover{
-                >img{
+            &:hover {
+                >img {
                     transform: scale(1.04);
                 }
             }
@@ -16,7 +16,7 @@
             >img {
                 height: 100%;
                 object-fit: cover;
-                transition: .3s ease;
+                transition: .3s ease-out;
             }
 
             &::after {
@@ -96,6 +96,23 @@
                 }
 
             }
+
+            @media (max-width: 767px) {
+                width: 100%;
+
+                >img {
+                    position: absolute;
+                }
+
+                .home__search__wrapper {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 33px 0;
+                }
+            }
         }
 
         .home__looking__container {
@@ -163,7 +180,40 @@
 
             .home__looking__swiper {
                 padding: 0 11px;
+
+                h3 {
+                    display: none;
+                    font-size: 17px;
+                    margin-bottom: 9px;
+                    color: #025B5D;
+                    font-family: 'Montserrat';
+                    font-weight: 600;
+                }
             }
+
+            @media (max-width: 767px) {
+                width: 100%;
+
+                .home__looking__swiper{
+                    order: -1;
+                    margin-top: 33px;
+                    h3{
+                        display: block;
+                    }
+                }
+
+                .home__looking__products__container{
+                    margin-top: 13px;
+
+                    .home__looking__heading{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
         }
     }
 
@@ -190,7 +240,7 @@
                 padding: 12px 17px;
                 padding-top: 63px;
                 padding-bottom: 7px;
-                transition: all .3s ease;
+                transition: all .3s ease-out;
                 cursor: pointer;
 
                 &:hover {
@@ -226,18 +276,19 @@
         }
 
         @media (max-width: 1024px) {
-            .home__tranding__products{
-                .home__tranding__products__col:nth-child(4){
+            .home__tranding__products {
+                .home__tranding__products__col:nth-child(4) {
                     margin-right: 0;
                 }
-                .home__tranding__products__col:last-child{
+
+                .home__tranding__products__col:last-child {
                     display: none;
                 }
             }
         }
 
         @media (max-width: 971px) {
-            .home__tranding__products{
+            .home__tranding__products {
                 margin-left: 33px;
                 margin-right: 33px;
             }
@@ -255,8 +306,7 @@
             margin-top: 123px;
 
             .home__sameday__products__col {
-                margin-bottom: 33px;
-                margin-right: 63px;
+                margin: 16.5px 31.5px;
                 flex: auto;
                 flex-basis: 20%;
                 position: relative;
@@ -266,7 +316,7 @@
                 padding: 12px 17px;
                 padding-top: 103px;
                 padding-bottom: 17px;
-                transition: all .3s ease;
+                transition: all .3s ease-out;
                 cursor: pointer;
 
                 &.active {
@@ -276,10 +326,6 @@
 
                 &:hover {
                     transform: scale(1.05);
-                }
-
-                &:last-child {
-                    margin-right: 0;
                 }
 
                 img {
@@ -308,23 +354,24 @@
         }
 
         @media (max-width: 1140px) {
-            .home__sameday__products{
+            .home__sameday__products {
                 max-width: 928px;
-                .home__sameday__products__col{
-                    margin-right: 33px;
+
+                .home__sameday__products__col {
+                    margin: 16.5px 16.5px;
                     padding-top: 87px;
 
-                    img{
+                    img {
                         height: 148px;
                     }
 
-                    img.pubg{
+                    img.pubg {
                         height: 199px;
                         top: -126.5px;
                         left: -9px;
                     }
 
-                    span{
+                    span {
                         font-size: 16px;
                     }
                 }
@@ -332,24 +379,47 @@
         }
 
         @media (max-width: 1000px) {
-            .home__sameday__products{
-                margin-left: 33px;
-                margin-right: 33px;
-                .home__sameday__products__col{
+            .home__sameday__products {
+                margin-left: 16.5px;
+                margin-right: 16.5px;
+
+                .home__sameday__products__col {
                     padding-top: 72px;
 
-                    img{
+                    img {
                         height: 129px;
                     }
 
-                    img.pubg{
+                    img.pubg {
                         height: 178px;
                         top: -121.5px;
                         left: -3px;
                     }
 
-                    span{
+                    span {
                         font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 850px) {
+            .home__sameday__products {
+                .home__sameday__products__col {
+                    padding-top: 61px;
+
+                    img {
+                        height: 120px;
+                    }
+
+                    img.pubg {
+                        height: 152px;
+                        top: -111.5px;
+                        left: -10px;
+                    }
+
+                    span {
+                        font-size: 14.5px;
                     }
                 }
             }
@@ -357,7 +427,7 @@
     }
 
     .safeservice {
-        width: 50%;
+        max-width: 647.5px;
         margin: 73px auto;
         display: flex;
         position: relative;
@@ -492,8 +562,7 @@
             margin-top: 73px;
 
             .home__appliances__products__col {
-                margin-bottom: 39px;
-                margin-right: 39px;
+                margin: 19.5px;
                 flex: auto;
                 flex-basis: 20%;
                 position: relative;
@@ -503,15 +572,11 @@
                 padding: 12px 17px;
                 padding-top: 69px;
                 padding-bottom: 7px;
-                transition: all .3s ease;
+                transition: all .3s ease-out;
                 cursor: pointer;
 
                 &:hover {
                     transform: scale(1.05);
-                }
-
-                &:last-child {
-                    margin-right: 0;
                 }
 
                 img {
@@ -535,6 +600,20 @@
                     font-weight: 500;
                     font-size: 13px;
                     font-family: 'Montserrat';
+                }
+            }
+        }
+
+        @media (max-width: 920px) {
+            .home__appliances__products {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 33px;
+
+                .home__appliances__products__col {
+                    flex-basis: calc(33.33333333% - 39px);
+                    margin: 33px 16.5px;
+                    max-width: 158px;
                 }
             }
         }
@@ -620,7 +699,6 @@
             margin: -16px;
 
             .customers__says__col__wrapper {
-                width: 25%;
                 flex: 0 0 auto;
                 padding: 16px;
             }
@@ -628,7 +706,8 @@
             .customers__says__col {
                 padding: 15px;
                 background: #FFFFFF;
-                box-shadow: 1px 20px 50px 1px rgba(0, 0, 0, 0.1);
+                box-shadow: 1px 5px 21px 1px rgb(0 0 0 / 10%);
+                margin: 16.5px;
 
                 img {
                     width: 18px;
@@ -652,6 +731,11 @@
                     margin-top: 23px;
                 }
             }
+        }
+
+        @media (max-width: 971px) {
+            margin-left: 33px;
+            margin-right: 33px;
         }
     }
 
