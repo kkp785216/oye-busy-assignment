@@ -88,6 +88,13 @@ const Home = () => {
             <Swiper
               spaceBetween={11}
               slidesPerView={2.4}
+              breakpoints={{
+                0: { slidesPerView: 1.4 },
+                470: { slidesPerView: 2.1 },
+                570: { slidesPerView: 2.4 },
+                767: { slidesPerView: 1.4 },
+                1024: { slidesPerView: 2.4 },
+              }}
             >
               <SwiperSlide><img src={`${basename}/assets/img/looking/1.png`} width="100%" alt="" /></SwiperSlide>
               <SwiperSlide><img src={`${basename}/assets/img/looking/2.png`} width="100%" alt="" /></SwiperSlide>

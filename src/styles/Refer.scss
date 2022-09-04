@@ -58,11 +58,11 @@
             left: -47px;
             margin-top: 21px;
 
-            img{
+            img {
                 cursor: pointer;
             }
 
-            img:first-child{
+            img:first-child {
                 margin-right: 11px;
             }
         }
@@ -79,6 +79,35 @@
 
         img.refer__screenshot1 {
             margin-right: 37px;
+        }
+    }
+
+    @media (max-width: 1140px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 767px) {
+        margin-left: 0;
+        margin-right: 0;
+
+        .refer__right{
+            img:first-child{
+                margin-right: 0;
+            }
+            img:last-child{
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 590px) {
+        padding-bottom: 27px;
+        .refer__left{
+            margin-right: 0;
+        }
+        .refer__right{
+            display: none;
         }
     }
 }

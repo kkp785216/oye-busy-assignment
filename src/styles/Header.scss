@@ -29,6 +29,7 @@ header.main-header {
             align-items: center;
             cursor: pointer;
             font-weight: 400;
+            height: 59px;
 
             &:hover {
                 text-decoration: underline;
@@ -36,6 +37,8 @@ header.main-header {
 
             span {
                 font-size: 14.5px;
+                line-height: 21px;
+                margin-left: 5px;
             }
         }
     }

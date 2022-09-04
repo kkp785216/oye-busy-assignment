@@ -73,12 +73,15 @@
             }
 
             span {
-                display: block;
                 text-align: center;
                 font-weight: 500;
                 font-size: 11px;
                 font-family: 'Montserrat';
                 color: #757575;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
             }
         }
 
@@ -138,7 +141,7 @@
             }
         }
 
-        .premium__service__swiper{
+        .premium__service__swiper {
             width: unset;
         }
     }
@@ -151,11 +154,12 @@
             }
         }
 
-        .premium__service__swiper{
+        .premium__service__swiper {
             margin: 0 33px;
         }
 
-        .swiper-button-prev, .swiper-button-next{
+        .swiper-button-prev,
+        .swiper-button-next {
             display: none;
         }
     }
