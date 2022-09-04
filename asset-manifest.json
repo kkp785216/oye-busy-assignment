@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/oye-busy-assignment/static/css/main.6be7180c.css",
+    "main.js": "/oye-busy-assignment/static/js/main.187ee7bc.js",
+    "static/js/787.1737273e.chunk.js": "/oye-busy-assignment/static/js/787.1737273e.chunk.js",
+    "index.html": "/oye-busy-assignment/index.html",
+    "static/media/prev.svg": "/oye-busy-assignment/static/media/prev.a15b16957c8b31d7617e.svg",
+    "static/media/next.svg": "/oye-busy-assignment/static/media/next.c45ce8c845ff0a6e288b.svg",
+    "main.6be7180c.css.map": "/oye-busy-assignment/static/css/main.6be7180c.css.map",
+    "main.187ee7bc.js.map": "/oye-busy-assignment/static/js/main.187ee7bc.js.map",
+    "787.1737273e.chunk.js.map": "/oye-busy-assignment/static/js/787.1737273e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6be7180c.css",
+    "static/js/main.187ee7bc.js"
+  ]
+}
